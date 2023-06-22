@@ -29,8 +29,7 @@ class ThreadingLockAcquireReleaseExample:
 
     def run(self):
         threads = list()
-
-        # Need an initial count of threads running in process for future calculation
+        # Need an intial count of threads running in process for future calculation
         initial_num_threads = active_count()
         for index in range(self.num_threads):
             logging.info("ThreadingLockAcquireReleaseExample run    : create and start thread %d.", index)
